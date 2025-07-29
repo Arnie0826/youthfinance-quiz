@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz-module.css">
+</head>
+<body>
+  <div class="quiz-bg-blur"></div>
+  <div class="quiz-card results-card">
+    <h1 class="results-title">Your Results</h1>
+    <div class="xp-bar-bg">
+      <div id="xpBar" class="xp-bar"></div>
+    </div>
+    <p id="resultsScore" class="results-score"></p>
+    <p id="badge" class="results-badge"></p>
+    <div id="mistakesList" class="mistakes-list"></div>
+    <div id="tipOfDay" class="tip-of-day"></div>
+    <button id="nextLevelBtn" class="quiz-next-btn">Play Next Level</button>
+  </div>
+
+  <!-- Load the dedicated results script -->
+  <script src="quiz-results.js"></script>
+</body>
+</html>

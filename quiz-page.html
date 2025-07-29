@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz-module.css">
+</head>
+<body>
+  <div class="quiz-bg-blur"></div>
+  <div class="quiz-card">
+    <div class="quiz-progress-bar-bg">
+      <div id="quizProgressBar" class="quiz-progress-bar"></div>
+    </div>
+    <div id="quizProgress" class="quiz-progress"></div>
+    <div id="quizQuestion" class="quiz-question"></div>
+    <div id="quizChoices" class="quiz-choices"></div>
+    <button id="nextBtn" class="quiz-next-btn" disabled>Next</button>
+  </div>
+
+  <!-- Only this script; all questions are inlined in quiz-module.js -->
+  <script src="quiz-module.js"></script>
+</body>
+</html>

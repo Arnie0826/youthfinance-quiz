@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Level</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz-module.css">
+</head>
+<body>
+  <div class="quiz-bg-blur"></div>
+  <div class="quiz-card">
+    <h1 class="quiz-title">Choose Your Level</h1>
+    <p class="quiz-subtitle">Select your age group to start the quiz:</p>
+    <div class="level-buttons">
+      <button class="level-btn" data-level="beginner">🟢 Beginner (12–14)</button>
+      <button class="level-btn" data-level="intermediate">🟡 Intermediate (15–16)</button>
+      <button class="level-btn" data-level="advanced">🔵 Advanced (17–18)</button>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.level-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        localStorage.setItem('quizLevel', btn.dataset.level);
+        window.location.href = 'quiz-page.html';
+      });
+    });
+  </script>
+</body>
+</html>
